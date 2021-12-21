@@ -21,10 +21,6 @@
       - Very Light Gray: hsl(0, 0%, 98%)
 */
 
-/*****************************/
-/* BELOW 544PX (Phones) */
-/*****************************/
-
 * {
   margin: 0;
   padding: 0;
@@ -35,25 +31,121 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-@media (max-width: 34em) {
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+.heading-primary {
+  font-size: 2.8rem;
+  font-weight: 200;
+  text-align: center;
+  padding-top: 6.8rem;
+  padding-bottom: 1.6rem;
+}
 
+.heading-primary em {
+  color: hsl(234, 12%, 34%);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.heading-theritary {
+  color: hsl(234, 12%, 34%);
+  font-size: 1.8rem;
+  margin-bottom: 0.4rem;
+}
+
+.center-paragraph {
+  display: flex;
+  justify-content: center;
+}
+
+.header-paragraph {
+  width: 48rem;
+  color: hsl(229, 6%, 66%);
+  font-size: 1.2rem;
+  font-weight: 200;
+  line-height: 1.8;
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+.description-text {
+  color: hsl(229, 6%, 66%);
+  font-weight: 200;
+  font-size: 0.95rem;
+  line-height: 1.9;
+  margin-bottom: 3.2rem;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* align-items: center;
+  justify-content: center; */
+  gap: 2.4rem;
+  padding: 0rem 32rem;
+  /* padding-bottom: 6.4rem; */
+}
+
+.card {
+  padding: 2.8rem;
+  border-radius: 0.4rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 24px 24px;
+}
+
+.icon {
+  float: right;
+}
+
+.first-card {
+  border-top: 0.3rem solid hsl(180, 62%, 55%);
+}
+
+.second-card {
+  border-top: 0.3rem solid hsl(0, 78%, 62%);
+}
+
+.third-card {
+  border-top: 0.3rem solid hsl(34, 97%, 64%);
+  /* grid-column: 2 / 2; */
+}
+
+.fourth-card {
+  border-top: 0.3rem solid hsl(212, 86%, 64%);
+  /* grid-column: 3 / 3; */
+}
+
+.first-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.second-and-third-cards-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.third-box {
+  display: flex;
+  align-items: center;
+}
+
+/* ////////////////////////////////////////////////////////// */
+/*****************************/
+/* BELOW 544PX (Phones) */
+/*****************************/
+@media (max-width: 34em) {
   /* .header {
     text-align: center;
   } */
 
   .heading-primary {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 200;
     text-align: center;
     padding-top: 6.8rem;
     padding-bottom: 1.6rem;
-    padding-left: 4.8rem;
-    padding-right: 4.8rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
   }
 
   .heading-primary em {
@@ -67,8 +159,8 @@ body {
     font-size: 1.2rem;
     font-weight: 200;
     text-align: center;
-    padding-left: 4.8rem;
-    padding-right: 4.8rem;
+    padding-left: 3.4rem;
+    padding-right: 3.4rem;
   }
 
   .cards-container {
@@ -77,8 +169,8 @@ body {
     gap: 2.4rem;
     padding-top: 6.4rem;
     padding-bottom: 6.4rem;
-    padding-left: 4.6rem;
-    padding-right: 4.6rem;
+    padding-left: 3.4rem;
+    padding-right: 3.4rem;
   }
 
   .card {
