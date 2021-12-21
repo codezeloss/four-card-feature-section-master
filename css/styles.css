@@ -35,7 +35,7 @@ body {
   font-size: 2.8rem;
   font-weight: 200;
   text-align: center;
-  padding-top: 6.8rem;
+  padding-top: 4.2rem;
   padding-bottom: 1.6rem;
 }
 
@@ -63,7 +63,7 @@ body {
   font-weight: 200;
   line-height: 1.8;
   text-align: center;
-  margin-bottom: 6rem;
+  margin-bottom: 4.5rem;
 }
 
 .description-text {
@@ -75,16 +75,16 @@ body {
 }
 
 .cards-container {
-  display: grid;
+  display: flex;
   grid-template-columns: 1fr 1fr 1fr;
-  /* align-items: center;
-  justify-content: center; */
+  align-items: center;
+  justify-content: center;
   gap: 2.4rem;
-  padding: 0rem 16rem;
-  /* padding-bottom: 6.4rem; */
+  padding-bottom: 6.4rem;
 }
 
 .card {
+  width: 26rem;
   padding: 2.8rem;
   border-radius: 0.4rem;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 24px 24px;
@@ -134,18 +134,18 @@ body {
 /* BELOW 544PX (Phones) */
 /*****************************/
 @media (max-width: 34em) {
-  /* .header {
-    text-align: center;
-  } */
+  .container {
+    margin: 0 3.4rem;
+  }
 
   .heading-primary {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 200;
     text-align: center;
-    padding-top: 6.8rem;
+    padding-top: 4.8rem;
     padding-bottom: 1.6rem;
-    padding-left: 1.2rem;
-    padding-right: 1.2rem;
+    /* padding-left: 1.2rem;
+    padding-right: 1.2rem; */
   }
 
   .heading-primary em {
@@ -156,41 +156,37 @@ body {
 
   .header-paragraph {
     color: hsl(229, 6%, 66%);
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 200;
     text-align: center;
-    padding-left: 3.4rem;
-    padding-right: 3.4rem;
   }
 
   .cards-container {
     display: flex;
     flex-direction: column;
     gap: 2.4rem;
-    padding-top: 6.4rem;
     padding-bottom: 6.4rem;
-    padding-left: 3.4rem;
-    padding-right: 3.4rem;
-  }
-
-  .card {
-    padding: 2.4rem;
-    border-radius: 0.4rem;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 24px 24px;
+    /* padding-left: 4.2rem;
+    padding-right: 4.2rem; */
   }
 
   .heading-theritary {
     color: hsl(234, 12%, 34%);
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     margin-bottom: 0.4rem;
   }
 
   .description-text {
     color: hsl(229, 6%, 66%);
+    font-size: 0.85rem;
     font-weight: 200;
-    font-size: 1rem;
     line-height: 1.9;
     margin-bottom: 3.2rem;
+  }
+
+  .card {
+    width: 100%;
+    padding: 2rem;
   }
 
   .icon {
